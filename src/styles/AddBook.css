@@ -1,0 +1,36 @@
+.addbook {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 85%;
+  margin: 0 180px;
+  margin-bottom: 20px;
+  background-color: #fafafa;
+}
+
+.addbook-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e1e1e;
+  margin: 20px 0;
+}
+
+.addbook-form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.addbook-form-item {
+  margin-right: 20px;
+}
+
+input {
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 550px;
+}

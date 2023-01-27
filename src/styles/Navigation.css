@@ -1,0 +1,38 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+  margin: 0 34px;
+}
+
+.Logo {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0290ff;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.list {
+  text-decoration: none;
+  color: rgb(107, 106, 106);
+}
+
+.active {
+  color: #343333;
+}
