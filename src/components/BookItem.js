@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const BookItem = ({ title, author }) => (
   <li className="booklist-item">
@@ -49,5 +50,8 @@ const BookItem = ({ title, author }) => (
     </div>
   </li>
 );
-
+BookItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+};
 export default BookItem;
