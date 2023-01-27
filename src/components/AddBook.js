@@ -1,9 +1,8 @@
-import React from 'react'
-import '../styles/AddBook.css'
+import React from 'react';
+import '../styles/AddBook.css';
 
-const AddBook = () => {
-  return (
-    <div className="addbook">
+const AddBook = () => (
+  <div className="addbook">
     <div className="addbook-title">ADD NEW BOOK</div>
     <form className="addbook-form">
       <div className="addbook-form-item">
@@ -17,7 +16,6 @@ const AddBook = () => {
       </div>
     </form>
   </div>
-  )
-}
+);
 
-export default AddBook
+export default AddBook;

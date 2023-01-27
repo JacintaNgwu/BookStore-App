@@ -1,9 +1,8 @@
-import React from 'react'
-import '../styles/BookList.css'
+import React from 'react';
+import '../styles/BookList.css';
 
-const BookList = () => {
-  return (
-    <div className="books">
+const BookList = () => (
+  <div className="books">
     <div className="book">
       <ul className="booklist">
         <li className="booklist-item">
@@ -150,7 +149,6 @@ const BookList = () => {
       </ul>
     </div>
   </div>
-  )
-}
+);
 
-export default BookList
+export default BookList;

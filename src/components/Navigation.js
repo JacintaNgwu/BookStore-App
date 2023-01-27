@@ -1,11 +1,10 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import userLogo from '../Images/userLogo.png'
-import '../styles/Navigation.css'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import userLogo from '../Images/userLogo.png';
+import '../styles/Navigation.css';
 
-const Navigation = () => {
-  return (
-    <>
+const Navigation = () => (
+  <>
     <nav>
       <div className="links">
         <div className="Logo">Bookstore CMS</div>
@@ -23,7 +22,6 @@ const Navigation = () => {
       </div>
     </nav>
   </>
-  )
-}
+);
 
-export default Navigation
+export default Navigation;
