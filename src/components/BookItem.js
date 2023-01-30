@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const BookItem = ({ title, author }) => (
+// eslint-disable-next-line react/prop-types
+const BookItem = ({ genre, title, author }) => (
   <li className="booklist-item">
     <div className="bookdetails">
-      <div className="genre">Action</div>
+      <div className="genre">{genre}</div>
       <div className="title">{title}</div>
       <div className="author">{author}</div>
       <div className="interact">
