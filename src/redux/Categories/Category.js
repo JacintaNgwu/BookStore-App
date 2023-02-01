@@ -1,17 +1,25 @@
-import { createReducer } from '@reduxjs/toolkit';
-
-export const CHECK_STATUS = 'BookStore-App/CategorIES/CHECK_STATUS';
+export const CHECK_STATUS = 'BookStore-App/Categories/CHECK_STATUS';
 
 const initialState = {
-  status: '',
+  categories: '',
 };
 
-const categoryReducer = createReducer(initialState, (construct) => {
-  construct
-    .addCase(CHECK_STATUS, (state, action) => {
-      const newState = { ...state, status: action.payload };
-      return newState;
-    });
-  construct.addDefaultCase((state) => state);
+// action
+export const checkStatus = () => ({
+  type: CHECK_STATUS,
 });
+
+// reducer
+const categoryReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case CHECK_STATUS:
+      return {
+        ...state,
+        categories: 'under construction',
+      };
+    default:
+      return state;
+  }
+};
+
 export default categoryReducer;
