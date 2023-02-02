@@ -1,26 +1,40 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../styles/BookList.css';
-import { useSelector } from 'react-redux';
 import BookItem from './BookItem';
 
-const BookList = () => {
-  const books = useSelector((state) => state.books.books);
-
+const BookList = (props) => {
+  const { books } = props;
   return (
     <div className="books">
       <ul>
-        {books && books.length > 0
-          ? books.map((book) => (
-            <BookItem
-              key={book.id}
-              id={book.id}
-              title={book.title}
-              author={book.author}
-            />
-          ))
-          : 'No books available'}
+        { books.map((book) => (
+          <BookItem
+            key={book.id}
+            id={book.id}
+            title={book.title}
+            author={book.author}
+          />
+        ))}
       </ul>
     </div>
   );
 };
+
+BookList.propTypes = {
+  books: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      title: PropTypes.string,
+      author: PropTypes.string,
+    }),
+  ),
+};
+
+BookList.defaultProps = {
+  books: PropTypes.arrayOf(
+    PropTypes.shape({}),
+  ),
+};
+
 export default BookList;
