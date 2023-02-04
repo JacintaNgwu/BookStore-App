@@ -5,6 +5,7 @@ nav {
   padding: 2rem;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 95.3%;
 }
 
 .links {
@@ -12,7 +13,6 @@ nav {
   justify-content: space-between;
   gap: 60px;
   align-items: center;
-  margin: 0 34px;
 }
 
 .Logo {
@@ -35,4 +35,11 @@ nav {
 
 .active {
   color: #343333;
+}
+
+.user {
+  padding: 10px;
+  border-radius: 60%;
+  border: 0.5px solid rgba(151, 144, 144, 0.5);
+  margin-right: 50px;
 }

@@ -36,7 +36,7 @@ const AddBook = () => {
           <input type="text" name="author" id="author" placeholder="Author" value={author} onChange={(e) => setAuthor(e.target.value)} />
         </div>
         <div className="addbook-form-item">
-          <button type="submit">ADD BOOK</button>
+          <button type="submit" className="bookbtn">ADD BOOK</button>
         </div>
       </form>
     </div>
