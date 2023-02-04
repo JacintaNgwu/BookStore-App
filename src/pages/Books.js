@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchBooks } from '../redux/Books/FetchBook';
 import BookList from '../components/BookList';
 import AddBook from '../components/AddBook';
+import Navigation from '../components/Navigation';
+import '../styles/Books.css';
 
 const Books = () => {
   const dispatch = useDispatch();
@@ -32,9 +34,17 @@ const Books = () => {
     );
   }
   return (
-    <div>
-      <BookList books={books} />
-      <AddBook />
+    <div className="contain">
+      {' '}
+      <div className="content">
+        <div className="container">
+          <Navigation />
+        </div>
+        <div className="header">
+          <BookList books={books} />
+          <AddBook />
+        </div>
+      </div>
     </div>
   );
 };

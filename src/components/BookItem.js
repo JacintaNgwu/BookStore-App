@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBooks } from '../redux/Books/RemoveBook';
+import '../styles/bookItem.css';
 
 const BookItem = (props) => {
   const { id, title, author } = props;
@@ -15,7 +16,7 @@ const BookItem = (props) => {
         <div className="interact">
           <div className="comment">Comments</div>
           <span className="vr" />
-          <button className="bookButton" type="button" onClick={() => { dispatch(removeBooks(id)); }}>Remove</button>
+          <button className="removeBtn" type="button" onClick={() => { dispatch(removeBooks(id)); }}>Remove</button>
           <span className="vr" />
           <div className="edit">Edit</div>
         </div>
@@ -25,20 +26,6 @@ const BookItem = (props) => {
           <div className="progress-bar-outer">
             <div className="progress-bar-inner" />
           </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            width="160px"
-            height="160px"
-          >
-            <defs>
-              <linearGradient id="GradientColor">
-                <stop offset="0%" stopColor="#e91e63" />
-                <stop offset="100%" stopColor="#673ab7" />
-              </linearGradient>
-            </defs>
-            <circle cx="80" cy="80" r="70" strokeLinecap="round" />
-          </svg>
         </div>
         <div className="progress-percentage">
           64%
